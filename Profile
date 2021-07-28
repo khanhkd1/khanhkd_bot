@@ -1,1 +1,1 @@
-web: gunicorn resource:app
+web: gunicorn resource_1:app
