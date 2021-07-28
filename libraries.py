@@ -1,5 +1,5 @@
 from flask import request
-from config import VERIFY_TOKEN
+from config import VERIFY_TOKEN, HEADERS
 import requests
 
 
@@ -14,7 +14,7 @@ def get_user_id(data):
 
 
 def get_api_data(url):
-    r = requests.get(url)
+    r = requests.get(url, headers=HEADERS)
     return r.json()['locations'][274]
 
 

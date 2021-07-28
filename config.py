@@ -6,3 +6,6 @@ ACCESS_TOKEN = 'EAAE2oadHBbUBABKdcQ1DgecRKoyOijNOce3ZC0g3GPxXsP4ME7jfNY2RExo8KnC
 VERIFY_TOKEN = 'VERIFY_TOKEN'
 
 URL_COVID_DATA = 'https://coronavirus-tracker-api.herokuapp.com/v2/locations'
+
+HEADERS = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) '
+                         'Chrome/39.0.2171.95 Safari/537.36'}
