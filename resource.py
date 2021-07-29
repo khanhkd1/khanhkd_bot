@@ -14,7 +14,8 @@ def receive_message():
         return verify_fb_token(token_sent)
     else:
         output = request.get_json()
-        bot.send_text_message(get_user_id(output), text_for_user(get_api_data(URL_COVID_DATA)))
+        bot.send_text_message(get_user_id(output), 'text')
+        # bot.send_text_message(get_user_id(output), text_for_user(get_api_data(URL_COVID_DATA)))
     return "Message Processed"
 
 
