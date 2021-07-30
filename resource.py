@@ -16,7 +16,7 @@ def receive_message():
         response = request.get_json()
         # kiểm tra xem có tin nhắn đến bot thì gửi lại thông tin dịch bệnh
         if 'message' in response['entry'][0]['messaging'][0].keys():
-            bot.send_text_message(get_user_id(response), text_for_user(get_api_data(URL_COVID_DATA)))
+            print(bot.send_text_message(get_user_id(response), text_for_user(get_api_data(URL_COVID_DATA))))
     return "Message Processed"
 
 
